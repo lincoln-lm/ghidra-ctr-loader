@@ -26,6 +26,7 @@ jobs:
         with:
           arguments: buildExtension
       - name: Upload extension
-        uses: kittaakos/upload-artifact-as-is@v0
+        uses: actions/upload-artifact@v4
         with:
-          path: dist/*.zip
+          name: ghidra-ctr-loader
+          path: dist/ghidra_11.4_PUBLIC_20260718_ghidra-ctr-loader.zip
